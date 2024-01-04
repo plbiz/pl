@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Premier Lodging</title>
+</head>
+<body>
+
+<header>
+  <nav>
+    <img src="images/gold_logo.svg" alt="Premier Lodging" class="company-logo">
+    <ul id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#partners">For Partners</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+
+    <ul id="mobile-nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#partners">For Partners</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1 class="section-title">Elevate your next</br>
+        stay with</br>
+        Premier Lodging</h1>
+    </div>
+    <div class="hero-image">
+        <img src="images/hero.jpg" alt="Luxury property" class="hero-image">
+    </div>
+</section>
+
+<section id="services" class="section-dark">
+    <h1 class="section-title">Services</h1>
+    <div class="services-table">
+        <div class="service-item">
+            <img src="images/companies.svg" alt="Large buildings" class="service-icon">
+            <h2 class="service-title">Corporate and Business Stays</h2>
+            <p class="service-text">Expertise in working with corporate clients and professionals.</p>
+        </div>
+        <div class="service-item">
+            <img src="images/house.svg" alt="House" class="service-icon">
+            <h2 class="service-title">Temporary Housing</h2>
+            <p class="service-text">Thoughtfully designed spaces for healthcare workers, consultants, and remote workers that are looking for a home away from home.
+            </p>
+        </div>
+        <div class="service-item">
+            <img src="images/map.svg" alt="Map" class="service-icon">
+            <h2 class="service-title">Insurance Relocations</h2>
+            <p class="service-text">We provide a comfortable stay for guests that require temporary relocation during home renovations.
+            </p>
+        </div>
+        <div class="service-item">
+            <img src="images/handshake.svg" alt="Handshake" class="service-icon">
+            <h2 class="service-title">Rental Property Solutions</h2>
+            <p class="service-text">Are you looking to rent out your property? We will lease out your property for a minimum of 3 years. Let us handle the management for you so you can enjoy your time doing things you want to do.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="partners" class="section-light">
+    <div class="partners-image">
+        <img src="images/living_room.jpg" alt="Luxury property" class="hero-image">
+    </div>
+    <div class="partners-content">
+        <h1 class="section-title">For Partners</h1>
+        <p>Are you a landlord or homeowner looking to make rental property ownership truly passive? Say goodbye to the hassles and stress associated with property management. By partnering with us, some of the benefits you can expect include a consistent income stream 
+            and the utmost care of your property.</p>
+        <a href="#contact">Contact us to learn more!</a>
+    </div>
+</section>
+
+<section id="about-contact" class="section-dark">
+    <div class="about-contact-container">
+        <div class="about-container" id="about">
+            <h1 class="section-title">Who We Are</h1>
+            <p>Premier Lodging, where luxury meets comfort. Established with a passion for providing 
+    unparalleled stylish and modern stays, our team has expertise in working with quality and diverse clients. 
+    Your journey to a memorable and comfortable stay begins with us. Book your next stay with us!
+            </p>
+        </div>
+        <div class="contact-container" id="contact">
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="0d384146-d595-4707-bb33-bf4c9568b1d1">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
+                <!-- <div class="h-captcha" data-captcha="true"></div> -->
+
+                <!-- Do not modify -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <input type="hidden" name="redirect" value="https://luxepremierlodging.com/#contact">
+
+                <button type="submit" id="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© Copyright 2024 Premier Lodging LLC All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+<!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
+</body>
+</html>
