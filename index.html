@@ -92,19 +92,20 @@
             </p>
         </div>
         <div class="contact-container" id="contact">
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <form id="contact-form" method="POST">
                 <input type="hidden" name="access_key" value="0d384146-d595-4707-bb33-bf4c9568b1d1">
-                <input type="text" id="name" name="name" placeholder="Name" required>
-                <input type="email" id="email" name="email" placeholder="Email" required>
-                <textarea id="message" name="message" placeholder="Message" rows="4" required></textarea>
-                <!-- <div class="h-captcha" data-captcha="true"></div> -->
+                <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required>
+                <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
+                <textarea id="message" name="message" placeholder="Message" rows="4" autocomplete="off" required></textarea>
 
                 <!-- Do not modify -->
+                <!-- <div class="h-captcha" data-captcha="true"></div> -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                <input type="hidden" name="redirect" value="https://luxepremierlodging.com/#contact">
-
                 <button type="submit" id="submitBtn">Submit</button>
+
+                <!-- Form Response -->
+                <div id="form-result"></div>
             </form>
         </div>
     </div>
@@ -114,7 +115,8 @@
     <p>© Copyright 2024 Premier Lodging LLC All rights reserved.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="js/scroll-menu.js"></script>
+<script src="js/contact-form.js"></script>
 <!-- <script src="https://web3forms.com/client/script.js" async defer></script> -->
 </body>
 </html>

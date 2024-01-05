@@ -10,6 +10,8 @@ $dark-text: #121212;
 $form-field: #242424;
 $form-text: #666;
 $form-button-text: #fff;
+$notification-light: #fff;
+$notification-error: #ff0000;
 $shadow: rgba(0, 0, 0, 0.2);
 
 $header-font-size: 42px;
@@ -190,34 +192,6 @@ section {
     }
   }
 
-  form {
-    max-width: 600px;
-    margin-top: 10%;
-
-    input,
-    textarea {
-      font-family: $body-font;
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      background-color: $form-field;
-      color: $form-text;
-      border: 1px solid $form-field;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    button {
-      font-family: $body-font;
-      background-color: $cta-light;
-      color: $form-button-text;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  }
-
   .section-title {
     font-size: $header-font-size;
   }
@@ -345,6 +319,58 @@ section {
   .about-container p {
     width: 90%;
     margin: auto;
+  }
+
+  .contact-container {
+    form {
+      max-width: 600px;
+      margin-top: 10%;
+  
+      input,
+      textarea {
+        font-family: $body-font;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: $form-field;
+        color: $form-text;
+        border: 1px solid $form-field;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+  
+      button {
+        font-family: $body-font;
+        background-color: $cta-light;
+        color: $form-button-text;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus,
+      button:focus {
+        outline: none !important;
+        border: 1px solid $cta-light;
+      }      
+    }
+
+    #form-result {
+      color: $notification-light;
+      margin: 20px;
+    }
+
+    #form-result.notice--danger {
+      color: $notification-error;
+    }
   }
 
   @media (max-width: 768px) {

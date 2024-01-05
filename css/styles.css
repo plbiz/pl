@@ -142,31 +142,6 @@ section.section-dark {
 section.section-dark .section-title {
   color: #fff;
 }
-section form {
-  max-width: 600px;
-  margin-top: 10%;
-}
-section form input,
-section form textarea {
-  font-family: "Karla", Helvetica, Arial, Lucida, sans-serif;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  background-color: #242424;
-  color: #666;
-  border: 1px solid #242424;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-section form button {
-  font-family: "Karla", Helvetica, Arial, Lucida, sans-serif;
-  background-color: #c2ab92;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
 section .section-title {
   font-size: 42px;
 }
@@ -270,6 +245,49 @@ section .section-title {
 #about-contact .about-container p {
   width: 90%;
   margin: auto;
+}
+#about-contact .contact-container form {
+  max-width: 600px;
+  margin-top: 10%;
+}
+#about-contact .contact-container form input,
+#about-contact .contact-container form textarea {
+  font-family: "Karla", Helvetica, Arial, Lucida, sans-serif;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #242424;
+  color: #666;
+  border: 1px solid #242424;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+#about-contact .contact-container form button {
+  font-family: "Karla", Helvetica, Arial, Lucida, sans-serif;
+  background-color: #c2ab92;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#about-contact .contact-container form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+#about-contact .contact-container form input:focus,
+#about-contact .contact-container form select:focus,
+#about-contact .contact-container form textarea:focus,
+#about-contact .contact-container form button:focus {
+  outline: none !important;
+  border: 1px solid #c2ab92;
+}
+#about-contact .contact-container #form-result {
+  color: #fff;
+  margin: 20px;
+}
+#about-contact .contact-container #form-result.notice--danger {
+  color: #ff0000;
 }
 @media (max-width: 768px) {
   #about-contact .about-contact-container {
