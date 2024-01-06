@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     //on submit, POST to web3Forms and get response
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-    //   submitButton.disabled = 'true';
+    //   submitButton.disabled = 'true';  // todo: delete
       submitButton.setAttribute('disabled', 'true');
 
       const formData = new FormData(form);
@@ -54,10 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
               form.reset();
               submitButton.removeAttribute('disabled');
 
-              //make response dissapear after 3 seconds
-              setTimeout(() => {
-                result.style.display = "none";
-              }, 3000);
+            //make response dissapear after 3 seconds
+            //   setTimeout(() => {
+            //     result.style.display = "none";
+            //   }, 3000);
           });
     });
 });
